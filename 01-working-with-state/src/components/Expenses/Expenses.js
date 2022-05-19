@@ -1,12 +1,12 @@
-import React from 'react'; // Technically we don't need this import but this is how it was done in the past.
-import ExpenseItem from './ExpenseItem';
-import Card from '../UI/Card';
-import './Expenses.css';
+import React from "react"; // Technically we don't need this import but this is how it was done in the past.
+import ExpenseItem from "./ExpenseItem";
+import Card from "../UI/Card";
+import "./Expenses.css";
 
-const Expenses = props => {
+const Expenses = (props) => {
   return (
-    <Card className='expenses'>
-       <ExpenseItem
+    <Card className="expenses">
+      <ExpenseItem
         title={props.expenses[0].title}
         amount={props.expenses[0].amount}
         date={props.expenses[0].date}
@@ -25,9 +25,9 @@ const Expenses = props => {
         title={props.expenses[3].title}
         amount={props.expenses[3].amount}
         date={props.expenses[3].date}
-      /> 
+      />
     </Card>
   );
-}
+};
 
 export default Expenses;
