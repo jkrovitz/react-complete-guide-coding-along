@@ -1,20 +1,19 @@
-import React from 'react'; // Technically we don't need this import but this is how it was done in the past.
-import ExpenseDate from './ExpenseDate';
-import Card from '../UI/Card';
-import './ExpenseItem.css';
+import React, { useState } from "react";
+import ExpenseDate from "./ExpenseDate";
+import Card from "../UI/Card";
+import "./ExpenseItem.css";
 
-const ExpenseItem = props => {
-
-  let title = props.title;
+const ExpenseItem = (props) => {
+  const [title, setTitle] = useState(props.title);
 
   const clickHandler = () => {
-      title = 'Updated!';
-      console.log(title);
+    setTitle("Updated!");
+    console.log(title);
   };
-  
+
   return (
-    <Card className='expense-item'>
-      <ExpenseDate date={props.date}/>
+    <Card className="expense-item">
+      <ExpenseDate date={props.date} />
       <div className="expense-item__description">
         <h2>{title}</h2>
         <div className="expense-item__price">${props.amount}</div>
@@ -22,6 +21,6 @@ const ExpenseItem = props => {
       <button onClick={clickHandler}>Change Title</button>
     </Card>
   );
-}
+};
 
 export default ExpenseItem;
