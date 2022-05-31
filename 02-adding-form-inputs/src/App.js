@@ -1,4 +1,6 @@
-import React from "react"; // Technically we don't need this import but this is how it was done in the past.
+import React from "react";
+
+import NewExpense from "./components/NewExpense/NewExpense";
 import Expenses from "./components/Expenses/Expenses";
 
 const App = () => {
@@ -24,19 +26,12 @@ const App = () => {
     },
   ];
 
-  return React.createElement(
-    "div",
-    {},
-    React.createElement("h2", {}, "Let's get started!"),
-    React.createElement(Expenses, { expenses: expenses })
+  return (
+    <div>
+      <NewExpense />
+      <Expenses expenses={expenses} />
+    </div>
   );
-
-  // return (
-  //   <div>
-  //     <h2>Let's get started!</h2>
-  //    <Expenses expenses={expenses} />
-  //   </div>
-  // );
 };
 
 export default App;
