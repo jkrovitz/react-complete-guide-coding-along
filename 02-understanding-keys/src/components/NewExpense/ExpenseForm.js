@@ -25,7 +25,8 @@ const ExpenseForm = (props) => {
   };
 
   const amountChangeHandler = (event) => {
-    setEnteredAmount(event.target.value);
+    const dateParts = event.target.value.split("-");
+    setEnteredAmount(dateParts[0], dateParts[1] + 1, dateParts[2]);
     // setUserInput({
     //   ...userInput,
     //   enteredAmount: event.target.value,
@@ -40,13 +41,18 @@ const ExpenseForm = (props) => {
     // })
   };
 
+  // Handle date issue
+  const dateString = enteredDate;
+  const dateParts = dateString.split("-");
+  const aDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
+
   const submitHandler = (event) => {
     event.preventDefault();
 
     const expenseData = {
       title: enteredTitle,
       amount: enteredAmount,
-      date: new Date(enteredDate),
+      date: aDate,
     };
 
     props.onSaveExpenseData(expenseData);
