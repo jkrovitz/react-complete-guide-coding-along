@@ -1,0 +1,10 @@
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem;
+  margin: 0.25rem 0;
+  width: 25rem;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+}
