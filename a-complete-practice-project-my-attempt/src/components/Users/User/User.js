@@ -1,12 +1,15 @@
-import React from "react";
+import Card from "../../UI/Card/Card";
+import styles from "./User.module.css";
 
 const User = (props) => {
   return (
-    <div>
-      <p>
-        {props.username} ({props.age} years old)
-      </p>
-    </div>
+    <li>
+      <Card className={styles["a-user"]}>
+        <p>
+          {props.username} ({props.age} years old)
+        </p>
+      </Card>
+    </li>
   );
 };
 
