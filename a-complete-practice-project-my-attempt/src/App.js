@@ -3,6 +3,7 @@ import { useState } from "react";
 import NewUser from "./components/NewUsers/NewUser/NewUser";
 import UsersList from "./components/Users/UsersList/UsersList";
 
+import "./components/AllComponentStyle.css";
 import styles from "./App.module.css";
 
 function App() {

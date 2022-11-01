@@ -17,11 +17,25 @@
   font: inherit;
   padding: 0.5rem;
   border-radius: 2px;
-  border: 1px solid #ccc;
+  border: 1px solid #01426a;
   width: 25rem;
   max-width: 100%;
 }
 
 .new-user__actions {
   text-align: right;
+}
+
+.new-user__form-container {
+  margin: 20px 20px 20px 20px;
+}
+
+.new-user__card{
+  width: 30rem;
+  border-radius: 2px;
+  border: 1px solid #01426a;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }

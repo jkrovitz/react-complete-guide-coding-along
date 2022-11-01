@@ -1,5 +1,3 @@
-
-
 import NewUserForm from "../NewUserForm/NewUserForm";
 
 const NewUser = (props) => {

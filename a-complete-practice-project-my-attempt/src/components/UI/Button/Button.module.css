@@ -3,7 +3,7 @@
   padding: 0.5rem 1.5rem;
   border: 1px solid #000000;
   color: white;
-  background: rgba(76, 11, 86, 1);
+  background: #01426a;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
   cursor: pointer;
 }
@@ -14,7 +14,8 @@
 
 .button:hover,
 .button:active {
-  background: #ac0e77;
-  border-color: #ac0e77;
+  background: #71c5e8;
+  color: #01426a;
+  border-color: #71c5e8;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
 }
