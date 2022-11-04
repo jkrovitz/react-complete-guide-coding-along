@@ -2,9 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.25rem;
-  margin: 0.25rem 0;
-  width: 25rem;
-  border-radius: 2px;
-  border: 1px solid #ccc;
+  padding: 0.25rem 0.25rem 0.25rem 1rem;
+  margin: 1rem auto;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #01426a;
+  max-width: 500px;
+  font-size: 1vw;
 }

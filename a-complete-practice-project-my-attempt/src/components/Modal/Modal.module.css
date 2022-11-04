@@ -2,11 +2,6 @@
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sits on top */
-  /*padding-top: 100px; /* Location of the box */
-  /*left: 0; */
-  /* top: 0; */
-  /*width: 100%; /* Full width */
-  /* height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
@@ -26,6 +21,7 @@
   -webkit-anmiation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
+  font-size: 1vw;
 }
 
 /* Add animation */
@@ -74,7 +70,7 @@
 }
 
 .modal-header-text {
-  font-size: 20pt;
+  font-size: 2vw;
   color: #ffffff;
   padding-bottom: 20px;
 }
